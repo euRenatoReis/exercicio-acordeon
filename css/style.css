@@ -1,0 +1,109 @@
+body {
+
+    background-color: rgb(133, 133, 250);
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.cartao {
+
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    max-width: 655px;
+    min-height: 347px;
+    align-self: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border-radius: 20px;
+    padding: 20px; 
+    box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.25);
+}
+
+.imagem{
+
+    Width: 278px;
+    height: 293px;
+    position: relative;
+    left: -150px;
+}
+
+.faq{
+
+   display: flex;
+   position: relative;
+   flex-direction: column;
+   right: 10px;
+   font-size: 17px;
+   gap: 30px;
+   flex-grow: 1;
+   left: -70px;
+}
+
+.faq p {
+
+    display: flex;
+    font-size: 17px;
+    flex-wrap: nowrap;
+}
+
+
+.faq h1{
+
+    display: flex;
+    font-size: 25px;
+    flex-wrap: nowrap;
+}
+
+.pergunta1, .pergunta2, .pergunta3{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.resposta1.esconder, .resposta2.esconder, .resposta3.esconder {
+
+    opacity: 0;
+    flex-grow: 0;
+    height: 0px;
+}
+
+.mostrar{
+
+    opacity: 1;
+    flex-grow: 1;
+}
+
+.abrirresposta1, .abrirresposta2, .abrirresposta3 {
+
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 50px;
+    cursor: pointer;
+}
+
+.seta1.fechada1, .seta2.fechada2, .seta3.fechada3 {
+
+    min-Width: 15px;
+    Height: 8.86px;
+    background-image: url("../imagens/seta\ fechada.png");
+}
+
+.seta1.aberta1, .seta2.aberta2, .seta3.aberta3{
+
+    min-Width: 15px;
+    Height: 8.86px;
+    background-image: url("../imagens/seta\ aberta.png");
+}
+
+
+input{
+
+    display: none;
+}
+
+hr{
+   display: flex;
+    min-height: 3px;
+    color: black;
+}
